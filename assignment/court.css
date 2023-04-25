@@ -1,0 +1,41 @@
+/* position: relative;
+width: 1440px;
+height: 960px; */
+
+#background {
+    background-color: #C7FFED;
+    
+    
+}
+
+#content {
+    
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    
+    font-size: 60px;
+    color: white;
+    background-color: red;
+    width: 653px;
+    height: 892px;
+    left: 39px;
+    top: 33px;
+    border: none;
+    
+    
+}
+
+#indoor{
+    background-image: url("assets/indoor.jpg");
+}
+
+#outdoor{
+    background-image: url("assets/outdoor.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+

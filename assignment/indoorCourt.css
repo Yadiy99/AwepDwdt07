@@ -1,0 +1,22 @@
+#content {
+ background-color: white;
+ border-radius: 5%;
+ text-align: center;
+}
+
+body{
+    text-align: center;
+    background-color: #C7FFED;
+}
+
+button {
+    width: 581px;
+    height: 108px;
+    left: 776px;
+    top: 768px;
+
+    background: #00337C;
+    border-radius: 26px;
+    color: white;
+    font-size: 30px;
+}
