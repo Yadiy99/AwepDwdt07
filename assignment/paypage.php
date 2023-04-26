@@ -135,13 +135,13 @@ body {
         <div class="v143_4"></div><span class="v143_7">Type of payment</span>
         <div class="v143_23">
             <div class="v143_5">
-            <img src="images/cash.png">
+            <img src="assets/cash.png">
             </div>
             <button class="v143_8">Cash</button>
         </div>
         <div class="v143_24">
             <div class="v143_6">
-            <img src="images/card.png">
+            <img src="assets/card.png">
             </div>
             <button class="v143_9">Card</button>
         </div>
