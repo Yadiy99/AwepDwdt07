@@ -86,7 +86,7 @@
             <div class="payment-option">
                 
               <button class="payment-button">
-                <img src="images/cash.png" alt="Cash Icon" />
+                <img src="assets/cash.png" alt="Cash Icon" />
                 <br>
                 Cash
               </button>
@@ -95,7 +95,7 @@
             <div class="payment-option">
 
             <button class="payment-button">
-                <img src="images/card.png" alt="Card Icon" />
+                <img src="assets/card.png" alt="Card Icon" />
                 <br>
                 Card
             </button>
