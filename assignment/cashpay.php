@@ -1,142 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Payment Confirmation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
+    body {
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: regular;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-    <style>
-        * {
-  box-sizing: border-box;
-}
-body {
-  font-size: 14px;
-}
-.v143_16 {
-  width: 100%;
-  height: 960px;
-  background: rgba(199,255,237,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v143_17 {
-  width: 100%;
-  height: 878px;
-  background: rgba(28,130,173,1);
-  opacity: 1;
-  position: absolute;
-  top: 35px;
-  left: 54px;
-  border-top-left-radius: 180px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 180px;
-  border-bottom-right-radius: 180px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-.v143_29 {
-  width: 258px;
-  height: 90px;
-  background: rgba(100,212,105,1);
-  opacity: 1;
-  position: absolute;
-  top: 707px;
-  left: 591px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.v143_27 {
-  width: 179px;
-  height: 179px;
-  background: url("../images/v143_27.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 152px;
-  left: 631px;
-  overflow: hidden;
-}
-.v143_18 {
-  width: 179px;
-  height: 179px;
-  background: rgba(100,212,104,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 50%;
-  box-shadow: 0px 14px 39px rgba(0, 0, 0, 0.25);
-}
-.v143_19 {
-  width: 94px;
-  height: 59px;
-  background: url("../images/v143_19.png");
-  opacity: 1;
-  position: absolute;
-  top: 60px;
-  left: 45px;
-  border: 4px solid rgba(255,255,255,1);
-}
-.v143_20 {
-  width: 100%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 403px;
-  left: 152px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 50px;
-  opacity: 1;
-  text-align: center;
-}
-.v143_21 {
-  width: 100%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 494px;
-  left: 152px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 26px;
-  opacity: 1;
-  text-align: center;
-}
-.v143_31 {
-  width: 258px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 727px;
-  left: 591px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: center;
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: rgba(199, 255, 237, 1);
+    }
+
+    .card {
+      width: 600px;
+      padding: 60px;
+      border-radius: 30px;
+      background-color: #0088cc;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card__icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #6cd869;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card__icon img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    .card__title {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .card__message {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: #64D469;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #4D9E50;
+    }
+
+/* -------------------------------------------tick thing------------------------------------------- */
+    #tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 
-    </style>
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
 
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+/* -------------------------------------------tick thing------------------------------------------- */
+
+  </style>
 </head>
 
 <body>
-    <div class="v143_16">
-        <div class="v143_17"></div>
-        <div class="v143_29"></div>
-        <div class="v143_27">
-            <div class="v143_18"></div>
-            <div class="v143_19"></div>
-        </div><span class="v143_20">Please pay cash by the counter.</span><span class="v143_21">Thank you for booking
-            (name).
-            Your booking details have been Emailed to you.</span><button class="v143_31">Okay</button>
+  <div class="container">
+    <div class="card">
+      <div class="card__icon">
+      <div id="tick-mark"></div>
+      </div>
+      <h1 class="card__title"><b> Please pay cash by the counter. </b></h1>
+      <p class="card__message">Thank you for your booking, username. Your booking details have been emailed to you.</p>
+      <br>
+      <a href="#" class="button">Continue</a>
     </div>
+  </div>
 </body>
 
 </html>
